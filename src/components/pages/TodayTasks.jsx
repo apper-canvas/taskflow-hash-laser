@@ -33,7 +33,7 @@ const TodayTasks = () => {
     setShowTaskForm(true);
   };
 
-  const handleSaveTask = async (taskData) => {
+const handleSaveTask = async (taskData) => {
     try {
       setTaskFormLoading(true);
       if (editingTask) {
@@ -43,8 +43,6 @@ const TodayTasks = () => {
       }
       setShowTaskForm(false);
       setEditingTask(null);
-    } catch (error) {
-      throw error;
     } finally {
       setTaskFormLoading(false);
     }

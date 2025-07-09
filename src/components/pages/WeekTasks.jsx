@@ -37,7 +37,7 @@ const WeekTasks = () => {
     setShowTaskForm(true);
   };
 
-  const handleSaveTask = async (taskData) => {
+const handleSaveTask = async (taskData) => {
     try {
       setTaskFormLoading(true);
       if (editingTask) {
@@ -47,8 +47,6 @@ const WeekTasks = () => {
       }
       setShowTaskForm(false);
       setEditingTask(null);
-    } catch (error) {
-      throw error;
     } finally {
       setTaskFormLoading(false);
     }
