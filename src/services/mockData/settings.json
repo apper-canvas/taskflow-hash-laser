@@ -1,0 +1,17 @@
+{
+  "theme": "light",
+  "defaultView": "all",
+  "showCompleted": true,
+  "soundEnabled": true,
+  "notifications": {
+    "dueDateReminders": true,
+    "completionSounds": true,
+    "dailyDigest": false
+  },
+  "preferences": {
+    "startOfWeek": "monday",
+    "timeFormat": "12h",
+    "defaultPriority": "medium",
+    "autoArchiveCompleted": false
+  }
+}

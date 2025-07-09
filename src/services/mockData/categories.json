@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "name": "Work",
+    "color": "primary",
+    "icon": "Briefcase",
+    "orderIndex": 1
+  },
+  {
+    "Id": 2,
+    "name": "Personal",
+    "color": "accent",
+    "icon": "User",
+    "orderIndex": 2
+  },
+  {
+    "Id": 3,
+    "name": "Health",
+    "color": "success",
+    "icon": "Heart",
+    "orderIndex": 3
+  },
+  {
+    "Id": 4,
+    "name": "Shopping",
+    "color": "warning",
+    "icon": "ShoppingCart",
+    "orderIndex": 4
+  },
+  {
+    "Id": 5,
+    "name": "Learning",
+    "color": "secondary",
+    "icon": "BookOpen",
+    "orderIndex": 5
+  }
+]
