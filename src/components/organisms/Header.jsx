@@ -1,15 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
+import ApperIcon from "@/components/ApperIcon";
 import Button from "@/components/atoms/Button";
 import SearchBar from "@/components/molecules/SearchBar";
-import ApperIcon from "@/components/ApperIcon";
 
 const Header = ({ 
   title, 
   searchValue, 
   onSearchChange, 
   onAddTask, 
-  onToggleSidebar 
+  onToggleSidebar,
+  onLogout
 }) => {
   return (
     <motion.header 
@@ -44,12 +45,21 @@ const Header = ({
             className="w-64 hidden sm:block"
           />
           
-          <Button
+<Button
             onClick={onAddTask}
             className="flex items-center gap-2"
           >
             <ApperIcon name="Plus" className="w-4 h-4" />
             <span className="hidden sm:inline">Add Task</span>
+          </Button>
+          
+<Button
+            variant="ghost"
+            onClick={onLogout}
+            className="flex items-center gap-2 ml-2"
+          >
+            <ApperIcon name="LogOut" className="w-4 h-4" />
+            <span className="hidden sm:inline">Logout</span>
           </Button>
         </div>
       </div>
